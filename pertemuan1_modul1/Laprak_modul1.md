@@ -277,7 +277,7 @@ penjelasan unguided 3
 program ini adalah implementasi perulangan bersarang (nested loops) unutuk menghasilkan pola visual kompleks berupa segitiga simetris terbalik menggunakan angka dan simbol bintang. inputan bilangan bulat N unutuk menentukan ukuran pola. Logika utamanya terletak pada perulangan luar yang berjalan mundur dari N hingga 1, yang mengontrol jumlah baris dan membuat pola semakin pendek ke bawah.Di setiap bari, perulangan bersarang pertama mencetak spasi untuk menggeser pola ke kanan, perulangan kedua mencetak angka turun (dari i ke 1), dan dan perulangan ke tiga mencetak angka naik (dari 1 ke i),  dipisahkan oleh bintang (*) di tengahnya. Terakhir kode  bintang terpisah di luar perulangan utama yang mencetak satu baris terakhir berupa bintang tunggal yang diposisikan di tengah, sehingga membentuk bagian penutup pola secara keseluruhan.
 
 ## Kesimpulan
-...
+Praktikum Modul 1 memperkenalkan penggunaan Code::Blocks sebagai IDE dan dasar pemrograman C++ yang meliputi struktur program, variabel, tipe data, operator, serta mekanisme input dan output. Melalui latihan guided, mahasiswa belajar menulis program sederhana seperti menampilkan teks dan melakukan operasi aritmatika, sedangkan pada latihan unguided mahasiswa dilatih mengembangkan logika sendiri untuk membuat kalkulator sederhana, menerjemahkan angka menjadi teks, dan membentuk pola dengan perulangan. Dengan demikian, praktikum ini memberikan pemahaman awal yang penting sebagai fondasi untuk mempelajari algoritma dan struktur data lebih lanjut.
 
 ## Referensi
 [1] Setiawan, I. (2022). Komparasi Kinerja Integrated Development Environment (IDE) Dalam Mengeksekusi Perintah Python. SATESI: Jurnal Sains Teknologi dan Sistem Informasi, 2(1), 52-59. 
