@@ -25,7 +25,7 @@
 
 ## Guided 
 
-### 1. ...
+### 1. Program Dasar Hello World
 
 ```C++
 #include <iostream>
@@ -37,9 +37,9 @@ int main() {
     return 0;
 }
 ```
-penjelasan singkat guided 1
+Program C++ ini adalah kode yang  berfungsi untuk menampilkan teks "Hallo Dunia" di layar konsol.
 
-### 2. ...
+### 2. Program Operasi Aritmatika Dasar
 
 ```C++
 #include <iostream>
@@ -66,28 +66,71 @@ int main() {
  return 0;
 }
 ```
-penjelasan singkat guided 2
+Program C++ ini berfungsi sebagai Kalkulator Aritmatika Dasar untuk bilangan bulat (integer), yang menghasilkan output penjumlahan (+), pengurangan (-), perkalian (*), pembagian (integer), dan modulus (%).
 
-### 3. ...
-
-```C++
-source code guided 3
-```
-penjelasan singkat guided 3
-
-### 4. ...
+### 3. Program Perulangan Naik dan Turun
 
 ```C++
-source code guided 3
-```
-penjelasan singkat guided 3
+#include <iostream>
 
-### 5. ...
+using namespace std;
+
+int main() {
+    int angka1, angka2;
+    cout << "Masukkan angka1: ";
+    cin >> angka1;
+    cout << "Masukkan angka2: ";
+    cin >> angka2;
+
+    for (int i = 0; i < angka1; i++) {
+        cout << i << " - ";
+    }
+
+    cout << endl;
+
+    for (int i = 20; i > angka2; i--) {
+        cout << i << " - ";
+    }
+
+    cout << endl;
+}
+```
+program ini berfungsi untuk memperlihatkan  dua jenis perulangan for. Program ini meminta dua input bilangan bulat, angka1 dan angka2. Kemudian, menjalankan perulangan naik (ascending) yang mencetak deret angka dari 0 dan berhenti sebelum mencapai angka1. Setelah itu, program menjalankan perulangan menurun (descending) yang mencetak deret angka dari 20 dan berlanjut selama nilainya lebih besar dari angka2
+
+### 4. Program Perulangan dengan While dan Do While
 
 ```C++
-source code guided 3
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int angka1, angka2;
+
+    cout << "Masukkan angka1: ";
+    cin >> angka1;
+    cout << "Masukkan angka2: ";
+    cin >> angka2;
+
+    int i = 0;
+    int j = 0;
+    while (i < angka1) {
+        cout << i << " - ";
+        i++;
+    }
+
+    cout << endl;
+
+    do {
+        cout << j << " - ";
+        j++;
+    } while (j < angka2);
+
+    return 0;
+}
 ```
-penjelasan singkat guided 3
+program C++ ini adalah untuk memperlihatkan dua jenis perulangan kondisional yang berbeda, yaitu while dan do-while.Bagian pertama menggunakan perulangan while, yang mencetak deret angka menaik dimulai dari 0 dan berlanjut selama nilainya kurang dari angka1, perulangan ini menguji kondisi di awal setiap iterasi. Bagian kedua menggunakan perulangan do-while, yang juga mencetak deret angka menaik dimulai dari 0 dan berlanjut selama nilainya kurang dari angka2, perulangan ini menjamin perintah dieksekusi minimal satu kali sebelum kondisi diuji di akhir iterasi.
+
 
 ## Unguided 
 
