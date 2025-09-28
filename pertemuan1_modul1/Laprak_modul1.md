@@ -128,7 +128,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/C:\Users\HP\OneDrive\Documents\telkomuniversity\strukturdata\praktikumSD\minggu1\laprak\103112400128_Ma-ruf-Sarifudin\pertemuan1_modul1/ss-unguided1.png)
+![Screenshot Output Unguided 1_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided1.png)
 
 
 ##### Output 2
