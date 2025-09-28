@@ -216,46 +216,42 @@ output:
 using namespace std;
 
 int main() {
-    int N;
-    int i, j;
+    int n;
+    cout << "Input: ";
+    cin >> n;
 
-    cout << "Masukkan input N: ";
-    cin >> N;
+   
+    for (int i = n; i >= 1; i--) {
 
-    cout << "\nOutput:\n";
-    for (i = N; i >= 1; i--) {
-        
-       
-        for (j = 1; j <= N - i; j++) {
-            cout << "  ";
+        for (int s = 0; s < n - i; s++) {
+            cout << "  "; 
         }
 
-       
-        for (j = i; j >= 1; j--) {
+        
+        for (int j = i; j >= 1; j--) {
             cout << j << " ";
         }
-        
-        
-        cout << "*"; 
 
         
-        for (j = 2; j <= i; j++) {
-            cout << " " << j;
+        cout << "* ";
+
+       
+        for (int j = 1; j <= i; j++) {
+            cout << j << " ";
         }
-        
+
         cout << endl;
     }
 
-    
-    for (i = 1; i <= N; i++) {
+  
+    for (int s = 0; s < n; s++) {
         cout << "  ";
     }
-    
-    
     cout << "*" << endl;
 
     return 0;
 }
+
 ```
 ### Output Unguided 3 :
 
