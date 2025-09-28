@@ -132,7 +132,7 @@ int main() {
 
 
 ##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 1_2](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided11.png)
 
 penjelasan unguided 1 
 
@@ -142,18 +142,62 @@ Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai
 contoh : 79 : tujuh puluh sembilan 
 
 ```C++
-source code unguided 2
+#include <iostream>
+#include <string>
+using namespace std;
+
+string Satuan[] = {"nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan"};
+string Belasan[] = {"sepuluh", "sebelas", "dua belas", "tiga belas", "empat belas", "lima belas", "enam belas", "tujuh belas", "delapan belas", "sembilan belas"};
+string Puluhan[] = {"", "", "dua puluh", "tiga puluh", "empat puluh", "lima puluh", "enam puluh", "tujuh puluh", "delapan puluh", "sembilan puluh"};
+
+string terjemahkan(int n) {
+    if (n < 0 || n > 100) {
+        return "Angka di luar dari 0 - 100";
+    }
+    
+    if (n < 10) {
+        return Satuan[n];
+    } 
+    else if (n < 20) {
+        return Belasan[n - 10];
+    }
+    else if (n < 100) {
+        int p = n / 10;
+        int s = n % 10;
+
+        if (s == 0) {
+            return Puluhan[p];
+        } else {
+            return Puluhan[p] + " " + Satuan[s];
+        }
+    }
+    else {
+        return "seratus";
+    }
+}
+
+int main() {
+    int angka;
+
+    cout << "Masukkan angka bulat positif (0-100): ";
+    cin >> angka;
+    
+    string hasil = terjemahkan(angka);
+    
+    cout << endl;
+    cout << angka << " : " << hasil << endl;
+
+    return 0;
+}
 ```
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided2.png)
 
-contoh :
-![Screenshot Output Unguided 2_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided2-1.png)
 
 ##### Output 2
-![Screenshot Output Unguided 2_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided22.png)
 
 penjelasan unguided 2
 
@@ -168,18 +212,60 @@ output:
     *
 
 ```C++
-source code unguided 3
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    int i, j;
+
+    cout << "Masukkan input N: ";
+    cin >> N;
+
+    cout << "\nOutput:\n";
+    for (i = N; i >= 1; i--) {
+        
+       
+        for (j = 1; j <= N - i; j++) {
+            cout << "  ";
+        }
+
+       
+        for (j = i; j >= 1; j--) {
+            cout << j << " ";
+        }
+        
+        
+        cout << "*"; 
+
+        
+        for (j = 2; j <= i; j++) {
+            cout << " " << j;
+        }
+        
+        cout << endl;
+    }
+
+    
+    for (i = 1; i <= N; i++) {
+        cout << "  ";
+    }
+    
+    
+    cout << "*" << endl;
+
+    return 0;
+}
 ```
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided3.png)
 
-contoh :
-![Screenshot Output Unguided 3_1](https://github.com/DhimazHafizh/2311102151_Muhammad-Dhimas-Hafizh-Fathurrahman/blob/main/Pertemuan1_Modul1/Output-Unguided3-1.png)
+
 
 ##### Output 2
-![Screenshot Output Unguided 3_2](https://github.com/(username github kalian)/(nama repository github kalian)/blob/main/(path folder menyimpan screenshot output)/(nama file screenshot output).png)
+![Screenshot Output Unguided 3_2](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided33.png)
 
 penjelasan unguided 3
 

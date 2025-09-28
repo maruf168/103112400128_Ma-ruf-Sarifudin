@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
 string Satuan[] = {"nol", "satu", "dua", "tiga", "empat", "lima", "enam", "tujuh", "delapan", "sembilan"};
@@ -39,10 +38,10 @@ int main() {
     cout << "Masukkan angka bulat positif (0-100): ";
     cin >> angka;
     
-    string hasil_konversi = terjemahkan(angka);
+    string hasil = terjemahkan(angka);
     
     cout << endl;
-    cout << angka << " : " << hasil_konversi << endl;
+    cout << angka << " : " << hasil << endl;
 
     return 0;
 }
