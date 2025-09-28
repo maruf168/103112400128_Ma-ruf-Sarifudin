@@ -136,6 +136,8 @@ int main() {
 
 penjelasan unguided 1 
 
+program ini  berfungsi sebagian penghitungan/ kalkulator  dengan dua inputan bilangan desimal dari pengguna.Setelah menginputkan bilngan desimal program akan melakukan empat operasi aritmatika dasar :pemjumlahan, pengurangan, perkalian, pembagian.program menggunkan cout << setprecision(2) >> untuk mengatur format output bentuknya desimal. program akan menghasilkan output bilangan desimal. 
+
 ### 2. Soal unguided 2
 
 Buatlah sebuah program yang menerima masukan angka dan mengeluarkan output nilai angka tersebut dalam bentuk tulisan. Angka yang akan di-input-kan user adalah bilangan bulat positif mulai dari 0 s,d 100.
@@ -201,6 +203,8 @@ int main() {
 
 penjelasan unguided 2
 
+program ini berfungsi unutuk menerjemahkan angka bilangan positif dari 0-100 menjadi bentuk teks (string).program ini menggunakan tiga array(satuan,belasan,Puluhan) untuk menyimpan kata-kata dasar. Semuan logika dilakukan di dalam fungsi tersemahkan(), yang menggunakan pernyataan kondisional if-else unutuk menentukan katagori angka : satuan (0-9), belasan(10-19),puluhan(20-99) dengan memisahkan digit puluhan dan satuan,atau seratus(100).
+
 ### 3. Soal unguided 3
 
 Buatlah program yang dapat memberikan inputan dan output sbb
@@ -264,6 +268,8 @@ int main() {
 ![Screenshot Output Unguided 3_2](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan1_modul1/ss-unguided33.png)
 
 penjelasan unguided 3
+
+program ini adalah implementasi perulangan bersarang (nested loops) unutuk menghasilkan pola visual kompleks berupa segitiga simetris terbalik menggunakan angka dan simbol bintang. inputan bilangan bulat N unutuk menentukan ukuran pola. Logika utamanya terletak pada perulangan luar yang berjalan mundur dari N hingga 1, yang mengontrol jumlah baris dan membuat pola semakin pendek ke bawah.Di setiap bari, perulangan bersarang pertama mencetak spasi untuk menggeser pola ke kanan, perulangan kedua mencetak angka turun (dari i ke 1), dan dan perulangan ke tiga mencetak angka naik (dari 1 ke i),  dipisahkan oleh bintang (*) di tengahnya. Terakhir kode  bintang terpisah di luar perulangan utama yang mencetak satu baris terakhir berupa bintang tunggal yang diposisikan di tengah, sehingga membentuk bagian penutup pola secara keseluruhan.
 
 ## Kesimpulan
 ...
