@@ -208,11 +208,11 @@ Program ini berfungsi untuk melakukan operasi penjumlahan, pengurangan, dan perk
 
 ### 2. Soal unguided 2
 
-Buatlah ADT pelajaran sebagai berikut di dalam file "pelajaran.h".
+Buatlah ADT pelajaran sebagai berikut di dalam file "pelajaran.h".<br/>
 type pelajaran <
      namaMapel : string
      kodeMapel : string
->
+><br/>
 fungction create_pelajaran( namapel : string,
      kodepel : string ) -> pelajarn
 procedure tampil_pelajaran( input pel : pelajaran)
