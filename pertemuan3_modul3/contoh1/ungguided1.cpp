@@ -37,7 +37,7 @@ int main() {
         getline(cin, mhs[i].nim);
         cout << "nilai uts   : ";
         cin >> mhs[i].uts;
-        cout << "nilai ua   : ";
+        cout << "nilai uas   : ";
         cin >> mhs[i].uas;
         cout << "nilai tugas : ";
         cin >> mhs[i].tugas;

@@ -55,7 +55,7 @@ cout << "Rata - Rata :" << rata2(mhs); //panggilan function
 return 0;
 }
 ```
-Fungsi program ini adalah untuk mendemonstrasikan pengisian dan pembacaan data ke dalam array satu dimensi. Program ini mendeklarasikan sebuah array integer berukuran 5 elemen. Perulangan for digunakan untuk meminta pengguna memasukkan nilai ke setiap elemen array secara berurutan, dari indeks 0 hingga 4. Setelah itu, perulangan while digunakan untuk membaca dan menampilkan kembali nilai yang tersimpan di dalam setiap elemen array tersebut.
+Program ini berfungsi untuk menampilkan penerapan struktur data mahasiswa yang menyimpan nama dan dua nilai ujian, lalu menghitung rata-ratanya. Prosedur inputMhs() digunakan untuk menerima input data dari pengguna, sedangkan fungsi rata2() menghitung nilai rata-rata dari dua nilai yang dimasukkan. Program ini memanggil kedua fungsi dan menampilkan hasil perhitungan rata-rata ke layar, sehingga menggambarkan penggunaan struct, prosedur, dan fungsi secara terintegrasi.
 
 ### 2. Program Operasi Matriks 2x2
 
@@ -99,6 +99,7 @@ void tampil_pelajaran(pelajaran pel) {
     cout << "nama Pelajaran :" <<pel.namaMapel << endl;
     cout << "kode pelajaran :" <<pel.kodeMapel << endl;
 }
+
 
 ##3.main.cpp
 
@@ -167,7 +168,7 @@ int main() {
         getline(cin, mhs[i].nim);
         cout << "nilai uts   : ";
         cin >> mhs[i].uts;
-        cout << "nilai ua   : ";
+        cout << "nilai uas   : ";
         cin >> mhs[i].uas;
         cout << "nilai tugas : ";
         cin >> mhs[i].tugas;
@@ -199,20 +200,19 @@ int main() {
 ![Screenshot Output Unguided 1_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided1.png)
 
 
-##### Output 2
-![Screenshot Output Unguided 1_2](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided11.png)
+
 
 penjelasan unguided 1 
 
-Program ini berfungsi untuk melakukan operasi penjumlahan, pengurangan, dan perkalian pada dua Matriks 3x3. Program ini menggunakan Array Dua Dimensi dan memecah setiap operasi matematika menjadi fungsi terpisah (penjumlahan, pengurangan, perkalian, dan tampilkan_matriks). Setiap fungsi operasi matriks menggunakan perulangan bersarang (nested loops) untuk mengolah elemen-elemennya. Secara khusus, fungsi perkalian menggunakan tiga loop bersarang, sesuai dengan aturan perkalian matriks, di mana setiap elemen hasil adalah penjumlahan dari hasil kali elemen baris Matriks A dengan kolom Matriks B. 
+Fungsi program ini adalah untuk menyimpan, menghitung, dan menampilkan data nilai beberapa mahasiswa secara terstruktur. Program ini menggunakan struct, array, fungsi, perulangan for, dan percabangan if. Struktur mahasiswa digunakan untuk menyimpan data seperti nama, NIM, nilai UTS, UAS, tugas, dan nilai akhir. Data beberapa mahasiswa disimpan dalam array mhs[10], sedangkan fungsi hitungnilaiakhir() digunakan untuk menghitung nilai akhir berdasarkan bobot UTS, UAS, dan tugas. Proses input dan output dilakukan menggunakan perulangan for agar dapat membaca serta menampilkan data setiap mahasiswa secara berulang, sementara percabangan if digunakan untuk membatasi jumlah mahasiswa maksimal 10 orang.
 
 ### 2. Soal unguided 2
 
-Buatlah ADT pelajaran sebagai berikut di dalam file "pelajaran.h".<br/>
+Buatlah ADT pelajaran sebagai berikut di dalam file "pelajaran.h".m
 type pelajaran <
      namaMapel : string
      kodeMapel : string
-><br/>
+>
 fungction create_pelajaran( namapel : string,
      kodepel : string ) -> pelajarn
 procedure tampil_pelajaran( input pel : pelajaran)
@@ -343,20 +343,13 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided33.png)
+![Screenshot Output Unguided 3_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided3.png)
 
 
 
 penjelasan unguided 3
 
-Program ini berfungsi sebagai Menu Interaktif untuk menganalisis statistik dasar dari sebuah array satu dimensi. Program ini menggunakan struktur switch-case untuk memproses pilihan pengguna.
-
-Logika utamanya dipecah menjadi beberapa fungsi dan prosedur yang terpisah:
- 1.Fungsi cariminimum() dan carimaksimum(): Keduanya menggunakan perulangan for untuk membandingkan setiap elemen array dan mengembalikan nilai ekstrem (fungsi dengan return value).
- 2.Prosedur hitungRataRata(): Menggunakan perulangan for untuk menjumlahkan semua elemen dan menghitung rata-rata, lalu menampilkan hasilnya (prosedur void tanpa return value).
- 3.Prosedur tampilkanarray(): Berfungsi untuk mencetak semua isi elemen array.
-
-Program utama (main) terus menampilkan menu dan menjalankan fungsi yang dipilih melalui perulangan do-while hingga pengguna memilih opsi 5 (Keluar)..
+Fungsi program ini adalah untuk menampilkan dan menukar elemen-elemen dalam dua array dua dimensi (matriks) serta mendemonstrasikan pertukaran nilai menggunakan pointer. Program ini menggunakan array 2 dimensi, fungsi, perulangan for, dan pointer. Dua matriks A dan B berukuran 3×3 diinisialisasi dengan nilai berbeda, kemudian fungsi tampilArray() digunakan untuk menampilkan isi masing-masing matriks. Fungsi tukarPosisi() berfungsi menukar elemen pada posisi tertentu antara kedua matriks menggunakan variabel sementara (temp). Selain itu, fungsi tukarPointer() digunakan untuk menukar nilai dua variabel melalui alamat memori menggunakan pointer. Dengan kombinasi elemen-elemen tersebut, program ini menunjukkan cara kerja array dua dimensi, perulangan bersarang, dan manipulasi data melalui pointer.
 
 ## Kesimpulan
 
