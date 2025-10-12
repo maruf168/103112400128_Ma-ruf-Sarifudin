@@ -4,22 +4,14 @@
 ## Dasar Teori
 
 ### A. Operasi Matriks (3x3) <br/>
-         Matriks adalah susunan bilangan yang disusun dalam bentuk baris dan kolom. Banyak digunakan dalam komputasi karena dapat menampilkan data, transformasi linear, dan persamaan matematis. [1]
-         Jika dua matriks memiliki ordo yang sama dan prosesnya dilakukan elemen per elemen, penjumlahan dan pengurangan matriks hanya dapat dilakukan jika keduanya memiliki aturan dimensi yang sama. Perkalian matriks dilakukan dengan mengalikan baris matriks pertama dengan kolom matriks kedua, yang menghasilkan matriks baru dengan ordo yang berbeda sesuai dengan aturan dimensi.
-         Representasi matriks dalam pemrograman C++ biasanya menggunakan array dua dimensi dan perulangan bersarang, juga dikenal sebagai nested loop, untuk mengakses dan mengubah elemen matriks.[2]
+        Abstract Data Type (ADT) atau tipe data abstrak merupakan konsep dalam pemrograman yang mendefinisikan sekumpulan operasi yang dapat dilakukan pada suatu tipe data tanpa harus mengetahui bagaimana data tersebut disimpan atau diimplementasikan. ADT berfungsi sebagai bentuk abstraksi untuk menyembunyikan detail implementasi dan hanya menampilkan antarmuka yang digunakan oleh pengguna program. Dengan pendekatan ini, pemrogram dapat memisahkan antara cara penggunaan data dan cara penyimpanan data secara internal.[1]
 
 
-### B. Pointer dan Reference <br/>
-      Salah satu variabel adalah pointer, yang menyimpan alamat memori dari variabel lain. Karena pointer bekerja langsung dengan alamat memori, sebuah fungsi memiliki kemampuan untuk mengubah nilai variabel asli. Sementara itu, referensi, atau alias, adalah nama variabel yang sudah ada, yang juga memungkinkan perubahan langsung pada variabel asli melalui mekanisme panggil dengan referensi.
-      Karena keduanya memungkinkan perubahan nilai di luar fungsi, pointer dan referensi digunakan secara luas dalam pertukaran nilai (swap). Perbedaan utama antara referensi dan pointer adalah bahwa referensi harus diinisialisasi secara langsung pada saat deklarasi dan tidak dapat diubah referensinya.[3]
+### B. Struktur Data dan Modularitas dalam ADT <br/>
+     Dalam penerapannya, ADT sering diimplementasikan menggunakan struct atau class di bahasa C++, di mana atribut menyimpan data dan fungsi/prosedur digunakan untuk mengakses serta memanipulasi data tersebut. Pendekatan ini memungkinkan pemrogram untuk menerapkan prinsip enkapsulasi, yakni melindungi data agar tidak diakses langsung dari luar modul.[2]
        
-#### C.Array 1 Dimensi dan Operasi Statistik Dasar
-    Array adalah struktur data yang menyimpan sekumpulan elemen bertipe sama dalam satu blok memori yang berurutan. Array satu dimensi hanya memerlukan satu indeks untuk mengakses elemen di dalamnya 
-    Beberapa operasi penting yang sering dilakukan pada array antara lain:
-        -Mencari nilai minimum, yaitu membandingkan seluruh elemen untuk menemukan nilai terkecil.
-        -Mencari nilai maksimum, dengan cara serupa tetapi mencari nilai terbesar.
-        -Menghitung rata-rata, yaitu menjumlahkan seluruh elemen kemudian membaginya dengan banyaknya elemen.
-    Operasi-operasi dasar ini sering dipadukan dengan struktur kontrol seperti switch-case untuk membuat program menu interaktif, sehingga pengguna dapat memilih jenis operasi yang ingin dijalankan [4].
+#### C.Keuntungan Penggunaan ADT dalam Pemrograman
+    Penggunaan ADT dalam pemrograman memberikan beberapa keuntungan, antara lain kemudahan dalam memperbaiki dan memperbarui kode tanpa memengaruhi bagian lain dari program, peningkatan keamanan data melalui pembatasan akses langsung, serta peningkatan efisiensi dalam pengelolaan struktur data kompleks seperti stack, queue, dan linked list. ADT sering diimplementasikan menggunakan struct atau class. Struct menyimpan data (field), sedangkan fungsi/prosedur menyediakan operasi-operasi terhadap data tersebut, seperti create, tampil, swap, dan sebagainya.[2]
 
 
 ## Guided 
@@ -108,7 +100,7 @@ void tampil_pelajaran(pelajaran pel) {
 ```
 Fungsi program ini untuk mengimplementasikan Abstract Data Type (ADT) pelajaran yang telah dideklarasikan sebelumnya di file header pelajaran.h. Program ini menggunakan fungsi, prosedur, dan struct untuk memproses serta menampilkan data pelajaran. Fungsi create_pelajaran() berfungsi membuat sebuah objek pelajaran baru dengan mengisi atribut namaMapel dan kodeMapel berdasarkan nilai parameter yang diterima, kemudian mengembalikan objek tersebut. Sedangkan prosedur tampil_pelajaran() digunakan untuk menampilkan data pelajaran ke layar dengan format yang rapi. Program ini menunjukkan penerapan konsep pemrograman modular, di mana implementasi fungsi dan prosedur dipisahkan dari file header agar kode lebih terstruktur dan mudah dikelola.
 
-### 3. program file main.cpp
+### 4. program file main.cpp
 
 ```C++
 #include <iostream>
@@ -420,12 +412,9 @@ penjelasan unguided 3
 Fungsi program ini adalah untuk menampilkan dan menukar elemen-elemen dalam dua array dua dimensi (matriks) serta mendemonstrasikan pertukaran nilai menggunakan pointer. Program ini menggunakan array 2 dimensi, fungsi, perulangan for, dan pointer. Dua matriks A dan B berukuran 3×3 diinisialisasi dengan nilai berbeda, kemudian fungsi tampilArray() digunakan untuk menampilkan isi masing-masing matriks. Fungsi tukarPosisi() berfungsi menukar elemen pada posisi tertentu antara kedua matriks menggunakan variabel sementara (temp). Selain itu, fungsi tukarPointer() digunakan untuk menukar nilai dua variabel melalui alamat memori menggunakan pointer. Dengan kombinasi elemen-elemen tersebut, program ini menunjukkan cara kerja array dua dimensi, perulangan bersarang, dan manipulasi data melalui pointer.
 
 ## Kesimpulan
-
-Praktikum Modul 2 memperdalam pemahaman mahasiswa mengenai penggunaan array, pointer, reference, serta perulangan dalam C++. Melalui latihan guided, mahasiswa berlatih mengimplementasikan operasi dasar seperti manipulasi array, operasi matriks, dan variasi loop. Pada latihan unguided, mahasiswa mengembangkan logika mandiri untuk membuat program operasi matriks 3x3, pertukaran nilai dengan pointer dan reference, serta analisis statistik array menggunakan menu interaktif. Praktikum ini melatih kemampuan problem solving sekaligus membangun dasar penting untuk mempelajari algoritma dan struktur data lanjutan.
+Kesimpulan dari modul 3 ini adalah bahwa penerapan Abstract Data Type (ADT) memungkinkan pemisahan antara definisi data dan cara pengelolaannya melalui penggunaan struct, fungsi, dan prosedur secara modular. Melalui latihan guided dan unguided, mahasiswa dapat memahami bagaimana ADT diterapkan untuk menyimpan dan memproses data seperti mahasiswa, pelajaran, serta operasi pertukaran nilai pada array dan pointer. Dengan memanfaatkan konsep modularitas, array, perulangan, dan pointer, program menjadi lebih terstruktur, efisien, dan mudah dikelola, sekaligus menunjukkan pentingnya abstraksi data dalam membangun program yang rapi dan mudah dikembangkan.
 
 ## Referensi
-[1] Pratama, H. J., Ali, E. P., Nurvia, M., & Harahap, E. (2021). Aplikasi penjumlahan dan perkalian matriks pada microsoft excel. Matematika: Jurnal Teori dan Terapan Matematika, 20(1), 17-22. 
-<br>[2] Nuraini, R. (2015). Desain algorithma operasi perkalian matriks menggunakan metode flowchart. Jurnal teknik komputer, 1(1), 144-151.
-<br>[3] Ma’arif, A. (2021). Dasar pemrograman bahasa C++ [Buku ajar]. Universitas Ahmad Dahlan.
-<br>[4] Indahyati, Uce., Rahmawati Yunianita. (2020). "BUKU AJAR ALGORITMA DAN PEMROGRAMAN DALAM BAHASA C++". Sidoarjo: Umsida Press. Diakses pada 10 Maret 2024 melalui https://doi.org/10.21070/2020/978-623-6833-67-4.
+[1] Schmidt, D. C., ADTs, D. O. U., & ADTs, B. I. C++ Support for Abstract Data Types. 
+<br>[2] Khoerul, A. (2023). Pengantar Struktur Data Full.
 
