@@ -24,7 +24,7 @@
 
 ## Guided 
 
-### 1. Implementasi Array dengan Perulangan For dan While 
+### 1. Struct ADT 
 
 ```C++
 #include <iostream>;
@@ -57,10 +57,9 @@ return 0;
 ```
 Program ini berfungsi untuk menampilkan penerapan struktur data mahasiswa yang menyimpan nama dan dua nilai ujian, lalu menghitung rata-ratanya. Prosedur inputMhs() digunakan untuk menerima input data dari pengguna, sedangkan fungsi rata2() menghitung nilai rata-rata dari dua nilai yang dimasukkan. Program ini memanggil kedua fungsi dan menampilkan hasil perhitungan rata-rata ke layar, sehingga menggambarkan penggunaan struct, prosedur, dan fungsi secara terintegrasi.
 
-### 2. Program Operasi Matriks 2x2
+### 2. program file pelajaran.h
 
 ```C++
-##1.pelajaran.h
 
 #ifndef PELAJARAN_H
 #define PELAJARAN_H
@@ -82,8 +81,13 @@ void tampil_pelajaran(pelajaran pel);
 
 #endif
 
-##2. pelajaran.cpp
 
+```
+Fungsi program ini untuk mendefinisikan Abstract Data Type (ADT) bernama pelajaran yang digunakan sebagai cetakan data untuk menyimpan informasi mata pelajaran. Program ini menggunakan struct, fungsi, dan prosedur, serta menerapkan konsep header file (.h) dalam pemrograman modular. Di dalam struktur pelajaran, terdapat dua atribut yaitu namaMapel dan kodeMapel yang masing-masing bertipe string. Selain itu, file ini juga mendeklarasikan sebuah fungsi create_pelajaran() yang digunakan untuk membuat dan menginisialisasi data pelajaran baru, serta prosedur tampil_pelajaran() yang berfungsi untuk menampilkan isi data pelajaran. File ini menggunakan directive #ifndef, #define, dan #endif sebagai header guard untuk mencegah pendefinisian ganda saat file di-include ke beberapa file lain dalam satu program.
+
+### 3. program file pelajaran.cpp
+
+```C++
 #include "pelajaran.h"
 
 //tampilkan function create_pelajaran
@@ -101,8 +105,12 @@ void tampil_pelajaran(pelajaran pel) {
 }
 
 
-##3.main.cpp
+```
+Fungsi program ini untuk mengimplementasikan Abstract Data Type (ADT) pelajaran yang telah dideklarasikan sebelumnya di file header pelajaran.h. Program ini menggunakan fungsi, prosedur, dan struct untuk memproses serta menampilkan data pelajaran. Fungsi create_pelajaran() berfungsi membuat sebuah objek pelajaran baru dengan mengisi atribut namaMapel dan kodeMapel berdasarkan nilai parameter yang diterima, kemudian mengembalikan objek tersebut. Sedangkan prosedur tampil_pelajaran() digunakan untuk menampilkan data pelajaran ke layar dengan format yang rapi. Program ini menunjukkan penerapan konsep pemrograman modular, di mana implementasi fungsi dan prosedur dipisahkan dari file header agar kode lebih terstruktur dan mudah dikelola.
 
+### 3. program file main.cpp
+
+```C++
 #include <iostream>
 #include "pelajaran.h"
 using namespace std;
@@ -117,10 +125,9 @@ int main(){
     return 0;
 }
 
+
 ```
-Fungsi program ini adalah untuk mendemonstrasikan operasi penjumlahan dan perkalian pada dua Matriks 2x2. Program ini menginisialisasi dua array dua dimensi (arrA dan arrB) yang bertindak sebagai matriks. Program menggunakan fungsi void bernama tampilkanHasil untuk mencetak array hasil dengan rapi. Operasi penjumlahan dilakukan dengan dua perulangan bersarang, menjumlahkan elemen pada indeks yang sama. Sementara itu, operasi perkalian menggunakan tiga perulangan bersarang (untuk baris, kolom, dan perkalian elemen) untuk menghitung hasil kali skalar baris arrA dengan kolom arrBS.
-
-
+Fungsi program ini untuk menampilkan data pelajaran menggunakan Abstract Data Type (ADT) yang telah dibuat sebelumnya. Program ini menggunakan fungsi utama (main), variabel string, dan pemanggilan fungsi dari file header eksternal. Pertama, program mendeklarasikan dua variabel yaitu namapel dan kodepel untuk menyimpan nama serta kode mata pelajaran. Nilai-nilai tersebut kemudian dikirim ke fungsi create_pelajaran() untuk membuat objek pelajaran. Setelah objek terbentuk, prosedur tampil_pelajaran() dipanggil untuk menampilkan informasi nama dan kode pelajaran ke layar. Program ini menerapkan konsep modularitas, karena fungsi pembuatan dan penampilan data dipisahkan dalam file berbeda agar lebih rapi dan mudah digunakan kembali.
 
 ## Unguided 
 
@@ -197,7 +204,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided1.png)
+![Screenshot Output Unguided 1_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan3_modul3/ss-ungguided1.png)
 
 
 
@@ -235,27 +242,88 @@ contoh output hasil
 nama pelajaran = struktur Data
 nilai : STD
 
+### file nya saya pisah jadi 3
+### 1. file pelajaran.h
+
 ```C++
+
+#ifndef PELAJARAN_H
+#define PELAJARAN_H
+
+#include <iostream>
+
+using namespace std;
+
+//Deklarasi ADT pelajaran
+struct pelajaran {
+    string namaMapel;
+    string kodeMapel;
+}; 
+//function untuk membuat data pelajaran
+pelajaran create_pelajaran(string namaMapel, string kodeMapel); 
+
+//prosedur untuk menampilkan data pelajaran
+void tampil_pelajaran(pelajaran pel);
+
+#endif
+
+
+```
+
+### 2. file pelajaran.cpp
+
+```C++
+#include "pelajaran.h"
+
+//tampilkan function create_pelajaran
+pelajaran create_pelajaran(string namaMapel, string kodepel) {
+    pelajaran p;
+    p.namaMapel = namaMapel;
+    p.kodeMapel = kodepel;
+    return p;
+}
+
+//tampilkan prosedur tampilkan_pelajaran
+void tampil_pelajaran(pelajaran pel) {
+    cout << "nama Pelajaran :" <<pel.namaMapel << endl;
+    cout << "kode pelajaran :" <<pel.kodeMapel << endl;
+}
+
+
+```
+
+
+### 3. file main.cpp
+
+```C++
+#include <iostream>
+#include "pelajaran.h"
+using namespace std;
+
+int main(){
+    string namapel = "Struktur Data";
+    string kodepel = "STD";
+
+    pelajaran pel = create_pelajaran(namapel, kodepel);
+    tampil_pelajaran(pel);
+
+    return 0;
+}
+
+
 
 ```
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided2.png)
+![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan3_modul3/ss-ungguided2.png)
 
 
-##### Output 2
-![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided22.png)
+
 
 penjelasan unguided 2
 
-Tentu, program C++ ini berfungsi untuk mendemonstrasikan dua cara berbeda untuk memodifikasi nilai variabel di luar fungsi (Call by Pointer dan Call by Reference) melalui operasi penukaran nilai melingkar (circular swap) pada tiga variabel.
-Tentu, program C++ ini berfungsi untuk mendemonstrasikan dua cara berbeda untuk memodifikasi nilai variabel di luar fungsi (Call by Pointer dan Call by Reference) melalui operasi penukaran nilai melingkar (circular swap) pada tiga variabel.
-
-Program ini mendefinisikan dua fungsi (tukar_pointer dan tukar_referensi) yang masing-masing:
- 1.Menggunakan Call by Pointer: Fungsi tukar_pointer menerima alamat memori variabel. Fungsi ini memodifikasi nilai variabel asli dengan menggunakan operator dereferensi (*) pada parameter yang dilewatkan.
- 2.Menggunakan Call by Reference: Fungsi tukar_referensi menerima referensi variabel (int &X). Fungsi ini memodifikasi nilai variabel asli tanpa menggunakan operator dereferensi.
- Kedua fungsi tersebut mengimplementasikan logika penukaran melingkar (A mengambil nilai C, C mengambil nilai B, dan B mengambil nilai A) dengan bantuan variabel sementara (temp).
+Fungsi keseluruhan dari tiga program ini adalah untuk penerapan Abstract Data Type (ADT) dengan pendekatan modular menggunakan tiga file terpisah, yaitu pelajaran.h, pelajaran.cpp, dan main.cpp. File pelajaran.h berfungsi sebagai header file yang mendefinisikan struktur data pelajaran berisi dua atribut (namaMapel dan kodeMapel), serta deklarasi fungsi create_pelajaran() dan prosedur tampil_pelajaran(). File pelajaran.cpp berisi implementasi fungsi dan prosedur tersebut — create_pelajaran() digunakan untuk membuat objek pelajaran baru berdasarkan input parameter, sedangkan tampil_pelajaran() menampilkan isi data pelajaran ke layar. Sementara itu, file main.cpp berperan sebagai program utama yang menginisialisasi data pelajaran (“Struktur Data”, “STD”), memanggil fungsi create_pelajaran() untuk membentuk objek, lalu menampilkan hasilnya dengan tampil_pelajaran(). Secara keseluruhan, program ini menggunakan struct, fungsi, prosedur, dan konsep modularitas, yang membuat kode lebih terstruktur, mudah dibaca, serta mendukung prinsip pemrograman berorientasi abstraksi data.
 
 ### 3. Soal unguided 3
 
@@ -343,7 +411,7 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 3_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan2_modul2/ss-ungguided3.png)
+![Screenshot Output Unguided 3_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan3_modul3/ss-ungguided3.png)
 
 
 
