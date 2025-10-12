@@ -3,11 +3,11 @@
 
 ## Dasar Teori
 
-### A. Operasi Matriks (3x3) <br/>
+### A.Abstract Data Type (ADT) <br/>
         Abstract Data Type (ADT) atau tipe data abstrak merupakan konsep dalam pemrograman yang mendefinisikan sekumpulan operasi yang dapat dilakukan pada suatu tipe data tanpa harus mengetahui bagaimana data tersebut disimpan atau diimplementasikan. ADT berfungsi sebagai bentuk abstraksi untuk menyembunyikan detail implementasi dan hanya menampilkan antarmuka yang digunakan oleh pengguna program. Dengan pendekatan ini, pemrogram dapat memisahkan antara cara penggunaan data dan cara penyimpanan data secara internal.[1]
 
 
-### B. Struktur Data dan Modularitas dalam ADT <br/>
+### B.Struktur Data dan Modularitas dalam ADT <br/>
      Dalam penerapannya, ADT sering diimplementasikan menggunakan struct atau class di bahasa C++, di mana atribut menyimpan data dan fungsi/prosedur digunakan untuk mengakses serta memanipulasi data tersebut. Pendekatan ini memungkinkan pemrogram untuk menerapkan prinsip enkapsulasi, yakni melindungi data agar tidak diakses langsung dari luar modul.[2]
        
 #### C.Keuntungan Penggunaan ADT dalam Pemrograman
