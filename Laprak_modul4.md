@@ -3,20 +3,16 @@
 
 ## Dasar Teori
 
-### A.Abstract Data Type (ADT) 
-```
-        Abstract Data Type (ADT) atau tipe data abstrak merupakan konsep dalam pemrograman yang mendefinisikan sekumpulan operasi yang dapat dilakukan pada suatu tipe data tanpa harus mengetahui bagaimana data tersebut disimpan atau diimplementasikan. ADT berfungsi sebagai bentuk abstraksi untuk menyembunyikan detail implementasi dan hanya menampilkan antarmuka yang digunakan oleh pengguna program. Dengan pendekatan ini, pemrogram dapat memisahkan antara cara penggunaan data dan cara penyimpanan data secara internal.[1]
-```
+## Dasar Teori
 
-### B.Struktur Data dan Modularitas dalam ADT 
-```
-     Dalam penerapannya, ADT sering diimplementasikan menggunakan struct atau class di bahasa C++, di mana atribut menyimpan data dan fungsi/prosedur digunakan untuk mengakses serta memanipulasi data tersebut. Pendekatan ini memungkinkan pemrogram untuk menerapkan prinsip enkapsulasi, yakni melindungi data agar tidak diakses langsung dari luar modul.[2]
-```
+### A.Abstract Data Type (ADT)
+Abstract Data Type (ADT) atau tipe data abstrak merupakan konsep dalam pemrograman yang mendefinisikan sekumpulan operasi yang dapat dilakukan pada suatu tipe data tanpa harus mengetahui bagaimana data tersebut disimpan atau diimplementasikan. ADT berfungsi sebagai bentuk abstraksi untuk menyembunyikan detail implementasi dan hanya menampilkan antarmuka yang digunakan oleh pengguna program. Dengan pendekatan ini, pemrogram dapat memisahkan antara cara penggunaan data dan cara penyimpanan data secara internal.[1]
 
-#### C.Keuntungan Penggunaan ADT dalam Pemrograman
-```
-    Penggunaan ADT dalam pemrograman memberikan beberapa keuntungan, antara lain kemudahan dalam memperbaiki dan memperbarui kode tanpa memengaruhi bagian lain dari program, peningkatan keamanan data melalui pembatasan akses langsung, serta peningkatan efisiensi dalam pengelolaan struktur data kompleks seperti stack, queue, dan linked list. ADT sering diimplementasikan menggunakan struct atau class. Struct menyimpan data (field), sedangkan fungsi/prosedur menyediakan operasi-operasi terhadap data tersebut, seperti create, tampil, swap, dan sebagainya.[2]
-```
+### B.Struktur Data dan Modularitas dalam ADT
+Dalam penerapannya, ADT sering diimplementasikan menggunakan struct atau class di bahasa C++, di mana atribut menyimpan data dan fungsi/prosedur digunakan untuk mengakses serta memanipulasi data tersebut. Pendekatan ini memungkinkan pemrogram untuk menerapkan prinsip enkapsulasi, yakni melindungi data agar tidak diakses langsung dari luar modul.[2]
+
+### C.Keuntungan Penggunaan ADT dalam Pemrograman
+Penggunaan ADT dalam pemrograman memberikan beberapa keuntungan, antara lain kemudahan dalam memperbaiki dan memperbarui kode tanpa memengaruhi bagian lain dari program, peningkatan keamanan data melalui pembatasan akses langsung, serta peningkatan efisiensi dalam pengelolaan struktur data kompleks seperti stack, queue, dan linked list. ADT sering diimplementasikan menggunakan struct atau class. Struct menyimpan data (field), sedangkan fungsi/prosedur menyediakan operasi-operasi terhadap data tersebut, seperti create, tampil, swap, dan sebagainya.[2]
 
 ## Guided 
 
