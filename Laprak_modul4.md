@@ -1,18 +1,16 @@
 # <h1 align="center">Laporan Praktikum Modul 4 - SINGLY LINKED LIST(BAGIAN PERTAMA)</h1>
 <p align="center">Ma'ruf Sarifudin - 103112400128</p>
 
-## Dasar Teori
+## Dasar Teor
 
-## Dasar Teori
-
-### A.Abstract Data Type (ADT)
+### A.Abstract Data Type (ADT) dan Struktur Data
 Abstract Data Type (ADT) atau tipe data abstrak merupakan konsep dalam pemrograman yang mendefinisikan sekumpulan operasi yang dapat dilakukan pada suatu tipe data tanpa harus mengetahui bagaimana data tersebut disimpan atau diimplementasikan. ADT berfungsi sebagai bentuk abstraksi untuk menyembunyikan detail implementasi dan hanya menampilkan antarmuka yang digunakan oleh pengguna program. Dengan pendekatan ini, pemrogram dapat memisahkan antara cara penggunaan data dan cara penyimpanan data secara internal.[1]
 
-### B.Struktur Data dan Modularitas dalam ADT
-Dalam penerapannya, ADT sering diimplementasikan menggunakan struct atau class di bahasa C++, di mana atribut menyimpan data dan fungsi/prosedur digunakan untuk mengakses serta memanipulasi data tersebut. Pendekatan ini memungkinkan pemrogram untuk menerapkan prinsip enkapsulasi, yakni melindungi data agar tidak diakses langsung dari luar modul.[2]
+### B.Singly Linked List (SLL)
+Singly Linked List adalah struktur data dinamis yang terdiri dari elemen-elemen (disebut node) yang saling terhubung. Berbeda dengan array yang memiliki ukuran statis dan akses cepat via indeks , SLL lebih fleksibel dalam penyisipan dan penghapusan data karena tidak memerlukan pergeseran elemen. Secara intuitif, doubly linked list (yang memiliki dua arah) lebih efisien daripada singly linked list. Hal ini karena SLL pada dasarnya bersifat satu arah; tidak ada cara untuk menggerakkan pointer ke posisi sebelumnya (mundur), kecuali dengan menyimpan alamat node tersebut di variabel lain.[2]
 
-### C.Keuntungan Penggunaan ADT dalam Pemrograman
-Penggunaan ADT dalam pemrograman memberikan beberapa keuntungan, antara lain kemudahan dalam memperbaiki dan memperbarui kode tanpa memengaruhi bagian lain dari program, peningkatan keamanan data melalui pembatasan akses langsung, serta peningkatan efisiensi dalam pengelolaan struktur data kompleks seperti stack, queue, dan linked list. ADT sering diimplementasikan menggunakan struct atau class. Struct menyimpan data (field), sedangkan fungsi/prosedur menyediakan operasi-operasi terhadap data tersebut, seperti create, tampil, swap, dan sebagainya.[2]
+### C.Karakteristik Operasi List
+Setiap struktur data memiliki keunggulan performa yang berbeda. Array unggul dalam akses data langsung (jika indeks diketahui), yang memiliki kompleksitas waktu $O(1)$99999999. Sebaliknya, SLL memerlukan penelusuran sekuensial dari node first untuk mencari data, sehingga operasi pencariannya memiliki kompleksitas $O(n)$10101010. Namun, SLL lebih unggul dalam fleksibilitas; operasi seperti penambahan atau penghapusan elemen di awal list (seperti insertFirst dan delFirst) dapat dilakukan dalam waktu konstan $O(1)$11111111. Karena itu, SLL lebih cocok untuk data yang ukurannya dinamis atau sering berubah.[2]
 
 ## Guided 
 
@@ -869,5 +867,7 @@ Kesimpulan dari modul 3 ini adalah bahwa penerapan Abstract Data Type (ADT) memu
 
 ## Referensi
 [1] Schmidt, D. C., ADTs, D. O. U., & ADTs, B. I. C++ Support for Abstract Data Types. 
-<br>[2] Khoerul, A. (2023). Pengantar Struktur Data Full.
+<br>[2] Sofianti, H. A., Manullang, Y. V., Tampubolon, N. A., Naibaho, L. H., & Gunawan, I. (2025). Implementasi Struktur Data Array Dan Linked List Dalam Pengelolaan Data Mahasiswa. Jurnal Penelitian Nusantara, 1(6), 871-877.
+<br>[3] Ben-Amram, A. M., & Petersen, H. (1999). Backing up in Singly Linked Lists. Proceedings of the thirty-first annual ACM symposium on Theory of computing (STOC '99), 780–786.
+
 
