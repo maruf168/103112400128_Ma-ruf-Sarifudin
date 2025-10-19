@@ -1,7 +1,7 @@
 # <h1 align="center">Laporan Praktikum Modul 4 - SINGLY LINKED LIST(BAGIAN PERTAMA)</h1>
 <p align="center">Ma'ruf Sarifudin - 103112400128</p>
 
-## Dasar Teor
+## Dasar Teori
 
 ### A.Abstract Data Type (ADT) dan Struktur Data
 Abstract Data Type (ADT) atau tipe data abstrak merupakan konsep dalam pemrograman yang mendefinisikan sekumpulan operasi yang dapat dilakukan pada suatu tipe data tanpa harus mengetahui bagaimana data tersebut disimpan atau diimplementasikan. ADT berfungsi sebagai bentuk abstraksi untuk menyembunyikan detail implementasi dan hanya menampilkan antarmuka yang digunakan oleh pengguna program. Dengan pendekatan ini, pemrogram dapat memisahkan antara cara penggunaan data dan cara penyimpanan data secara internal.[1]
