@@ -732,7 +732,7 @@ int main() {
 ### Output Unguided 1 :
 
 ##### Output 1
-![Screenshot Output Unguided 1_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan5_modul5/ss-ungguided1.png)
+![Screenshot Output Unguided 1](ss-ungguided1.png)
 
 
 penjelasan unguided 1 
@@ -1094,7 +1094,7 @@ int main() {
 ### Output Unguided 2 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan5_modul5/ss-ungguided2.png)
+![Screenshot Output Unguided 2](ss-ungguided2.png)
 
 
 penjelasan unguided 2
@@ -1508,7 +1508,7 @@ int main() {
 ### Output Unguided 3 :
 
 ##### Output 1
-![Screenshot Output Unguided 2_1](https://github.com/maruf168/103112400128_Ma-ruf-Sarifudin/blob/main/pertemuan5_modul5/ss-ungguided3.png)
+![Screenshot Output Unguided 3](ss-ungguided3.png)
 
 
 penjelasan unguided 3
