@@ -466,56 +466,35 @@ Terakhir, pada file main.cpp, program dijalankan mulai dari membuat list kosong 
 
 ### 1. Soal Unguided 1
 
-Buatlah file header Singlylist.h yang berisi definisi struktur data dan prototipe fungsi/prosedur berikut:
+Tambahkan Prosedur Update:
 
-Definisi Tipe:
-Type infotype : int
-Type address : pointer to ElmList
-Type ElmList < info : infotype, next : address >
-Type List < First : address >
-
-Prototipe Fungsi dan Prosedur:
-
-procedure CreateList(input/output L : List)
-function alokasi(x : infotype) -> address
-procedure dealokasi(input/output P : address)
-procedure printInfo(input L : List)
-procedure insertFirst(input/output L : List, input P : address)
-
-2. File Implementasi (Singlylist.cpp)
-
-Buatlah file implementasi Singlylist.cpp yang berisi definisi (isi) dari semua prosedur dan fungsi yang telah dideklarasikan di Singlylist.h.
-
-3. File Utama (main.cpp)
-
-Buatlah program utama main.cpp dengan implementasi sebagai berikut untuk menguji ADT yang telah dibuat:
+Tambahkan deklarasi (prototipe) prosedur berikut ke file ListAngka.h:
 
 C++
 
-int main() {
-    List L;
-    address P1, P2, P3, P4, P5 = Nil;
-    createList(L);
+Procedure updateFirst ( input / output L : List )
+Procedure updateLast ( input / output L : List )
+Procedure updateAfter ( input / output L : List, input nodePrev : address )
+Buat implementasi (definisi) ketiga prosedur tersebut di file listAngka.cpp. Fungsi ini harus meminta input angka baru dari pengguna dan mengubah data (Angka) pada node yang sesuai.
 
-    P1 = alokasi(2);
-    insertFirst(L, P1);
+Modifikasi main.cpp:
 
-    P2 = alokasi(0);
-    insertFirst(L, P2);
+Setelah list awal (40 - 18 - 25 - 8 - 33 -) terbentuk dan ditampilkan (dari soal Unguided 1), lakukan operasi berikut secara berurutan:
 
-    P3 = alokasi(8);
-    insertFirst(L, P3);
+Panggil updateFirst untuk mengubah data 40 menjadi 50.
 
-    P4 = alokasi(12);
-    insertFirst(L, P4);
+Panggil updateAfter untuk mengubah data 8 (setelah node 25) menjadi 29.
 
-    P5 = alokasi(9);
-    insertFirst(L, P5);
+Panggil updateLast untuk mengubah data 33 menjadi 45.
 
-    printInfo(L);
-    return 0;
-}
-Program ini diharapkan menghasilkan linked list dengan urutan elemen 9 -> 12 -> 8 -> 0 -> 2.
+Panggil updateAfter untuk mengubah data 18 (setelah node 50) menjadi 20.
+
+Tampilkan seluruh isi list setelah semua proses update selesai.
+
+Output yang Diharapkan (Final List):
+
+50 - 20 - 25 - 29 - 45 -
+
 
 ## 1. file ListAngka.h
 ```C++
@@ -772,7 +751,51 @@ Setelah itu, dilakukan proses update pada beberapa node — yaitu node pertama, 
 
 ### 2. Soal unguided 2
 
-Dari soal Latihan pertama, lakukan penghapusan node 9 menggunakan deleteFirst,node 2 menggunakan deleteLast(), dan node 8 menggunakan deleteAfter(). Kemudian tempilkan jumlah node yang terpisah menggunakan nbList() dan lakukan penghapusan seluruh node menggunakan deleteList();
+(Search)
+Lanjutkan program dari Soal Unguided 1 (setelah list diupdate menjadi 50 - 20 - 25 - 29 - 45 -).
+
+Tambahkan Prosedur Search:
+
+Tambahkan deklarasi (prototipe) prosedur berikut ke file ListAngka.h:
+
+C++
+
+Procedure SearchByData( input L : List, input data : integer )
+Procedure SearchByAddress( input L : List, input node : address )
+Procedure SearchByRange( input L : List, input nilaiMin : integer )
+Buat implementasi (definisi) ketiga prosedur tersebut di file listAngka.cpp. Fungsi ini harus mencari node sesuai kriteria dan mencetak hasilnya ke layar sesuai format output yang diharapkan.
+
+Modifikasi main.cpp:
+
+Setelah list ditampilkan pasca-update (dari soal Unguided 2), lakukan operasi pencarian berikut secara berurutan:
+
+Mencari data nilai 20.
+
+Mencari data nilai 55.
+
+Mencari data alamat nodeB (Gunakan pointer ke node yang dialokasi untuk angka 13 sebelumnya, meskipun sudah tidak ada di list utama).
+
+Mencari data alamat nodeA (Gunakan pointer ke node yang berisi angka 29 setelah diupdate).
+
+Mencari data dengan nilai minimal 40.
+
+Output yang Diharapkan (Search Results):
+
+Data 20 ditemukan pada posisi ke-2!
+
+Node dengan data 55 tidak ditemukan!
+
+Node dengan alamat <alamat_memori_nodeB> tidak ditemukan dalam list!
+
+Node ditemukan pada posisi ke-4!
+Alamat node : <alamat_memori_nodeA>
+
+--- Data diatas nilai 40 ---
+-------------------------------------------
+Data ditemukan pada posisi ke-1, nilai : 50
+Data ditemukan pada posisi ke-5, nilai : 45
+-------------------------------------------
+(Ganti <alamat_memori_nodeB> dan <alamat_memori_nodeA> dengan alamat memori aktual yang akan ditampilkan saat program berjalan).
 
 
 ### 1. file ListAngka.h
@@ -1116,7 +1139,27 @@ Selanjutnya, program melakukan beberapa pencarian. Saat mencari angka 20, progra
 
 ### 3. Soal unguided 3
 
-Dari soal Latihan pertama, lakukan penghapusan node 9 menggunakan deleteFirst,node 2 menggunakan deleteLast(), dan node 8 menggunakan deleteAfter(). Kemudian tempilkan jumlah node yang terpisah menggunakan nbList() dan lakukan penghapusan seluruh node menggunakan deleteList();
+(Aritmetika)
+Lanjutkan program dari Soal Unguided 3. Gunakan list final setelah update (50 - 20 - 25 - 29 - 45 -).
+
+Modifikasi main.cpp:
+
+Tambahkan kode untuk melakukan operasi aritmetika berikut pada semua data (Angka) dalam list:
+
+Penjumlahan: Hitung total penjumlahan semua angka, dimulai dari 0.
+
+Pengurangan: Hitung hasil pengurangan berurutan, dimulai dari nilai node pertama (50), lalu dikurangi node kedua (20), dikurangi node ketiga (25), dan seterusnya.
+
+Perkalian: Hitung total perkalian semua angka, dimulai dari 1.
+
+Cetak hasil ketiga operasi tersebut ke layar.
+
+Output yang Diharapkan:
+
+Total penjumlahan: 169
+Total pengurangan: -69
+Total perkalian: 32625000
+(Perhatian: Hasil pengurangan di file Anda -119 sepertinya salah hitung. 50 - 20 - 25 - 29 - 45 = -69).
 
 
 ### 1. file ListAngka.h
