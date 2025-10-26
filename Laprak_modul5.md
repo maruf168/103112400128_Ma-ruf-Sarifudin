@@ -765,37 +765,7 @@ Procedure SearchByAddress( input L : List, input node : address )
 Procedure SearchByRange( input L : List, input nilaiMin : integer )
 Buat implementasi (definisi) ketiga prosedur tersebut di file listAngka.cpp. Fungsi ini harus mencari node sesuai kriteria dan mencetak hasilnya ke layar sesuai format output yang diharapkan.
 
-Modifikasi main.cpp:
 
-Setelah list ditampilkan pasca-update (dari soal Unguided 2), lakukan operasi pencarian berikut secara berurutan:
-
-Mencari data nilai 20.
-
-Mencari data nilai 55.
-
-Mencari data alamat nodeB (Gunakan pointer ke node yang dialokasi untuk angka 13 sebelumnya, meskipun sudah tidak ada di list utama).
-
-Mencari data alamat nodeA (Gunakan pointer ke node yang berisi angka 29 setelah diupdate).
-
-Mencari data dengan nilai minimal 40.
-
-Output yang Diharapkan (Search Results):
-
-Data 20 ditemukan pada posisi ke-2!
-
-Node dengan data 55 tidak ditemukan!
-
-Node dengan alamat <alamat_memori_nodeB> tidak ditemukan dalam list!
-
-Node ditemukan pada posisi ke-4!
-Alamat node : <alamat_memori_nodeA>
-
---- Data diatas nilai 40 ---
--------------------------------------------
-Data ditemukan pada posisi ke-1, nilai : 50
-Data ditemukan pada posisi ke-5, nilai : 45
--------------------------------------------
-(Ganti <alamat_memori_nodeB> dan <alamat_memori_nodeA> dengan alamat memori aktual yang akan ditampilkan saat program berjalan).
 
 
 ### 1. file ListAngka.h
