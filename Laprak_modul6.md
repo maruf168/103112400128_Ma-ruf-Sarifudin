@@ -2,7 +2,7 @@
 <p align="center">Ma'ruf Sarifudin - 103112400128</p>
 
 
-## Dasar Teor
+## Dasar Teori
 
 ### A.Struktur Data Doubly Linked List
 Doubly Linked List (DLL) merupakan salah satu bentuk struktur data berantai (linked list) yang memiliki dua arah keterhubungan antar elemen (node). Setiap node pada struktur ini terdiri atas tiga komponen utama, yaitu data yang menyimpan informasi, pointer prev yang menunjuk ke node sebelumnya, dan pointer next yang menunjuk ke node berikutnya. Dengan adanya dua pointer ini, pergerakan atau penelusuran data dapat dilakukan dari depan ke belakang (forward traversal) maupun dari belakang ke depan (backward traversal), sehingga lebih fleksibel dibandingkan struktur singly linked list yang hanya dapat diakses dari satu arah.  konsep DLL memberikan efisiensi lebih tinggi dalam operasi manipulasi data seperti penyisipan dan penghapusan karena tidak memerlukan pergeseran elemen secara keseluruhan sebagaimana pada array.
