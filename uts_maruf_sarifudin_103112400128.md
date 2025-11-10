@@ -1,4 +1,4 @@
-# <h1 align="center">Laporan Praktikum Modul 7 - STACK</h1>
+# <h1 align="center">SOAL 1: SINGLY LINKED LIST (SLL)</h1>
 <p align="center">Ma'ruf Sarifudin - 103112400128</p>
 
 
