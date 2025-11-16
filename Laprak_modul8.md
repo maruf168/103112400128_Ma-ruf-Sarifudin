@@ -2,7 +2,7 @@
 <p align="center">Ma'ruf Sarifudin - 103112400128</p>
 
 
-## Dasar Teor
+## Dasar Teori
 #### 1. Definisi dan Karakteristik Queue
 Struktur data Queue (antrian) adalah abstraksi data di mana elemen baru ditambahkan dari satu ujung (tail/rear) dan elemen diambil dari ujung lainnya (head/front). Dengan kata lain, prinsipnya adalah First In First Out (FIFO): elemen yang masuk paling awal akan keluar paling dulu. Dalam prakteknya, Queue sering digunakan sebagai buffer, antrian proses, sistem penjadwalan, maupun sistem yang membutuhkan pengelolaan urutan kedatangan dan pemrosesan.
 Dengan memahami definisi dan karakteristik FIFO, maka implementasi queue perlu memperhatikan operasi utama: enqueue (masuk) dan dequeue (keluar).[1]
