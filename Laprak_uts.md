@@ -1269,12 +1269,12 @@ int main() {
     enqueue(Q, p4);
     enqueue(Q, p5);
 
-    cout << "--- Isi Queue Setelah Enqueue ---" << endl;
+    cout << " Isi Queue Setelah Enqueue " << endl;
     viewQueue(Q);
     cout << endl;
 
     dequeue(Q);
-    cout << "--- Isi Queue Setelah Dequeue 1x ---" << endl;
+    cout << " Isi Queue Setelah Dequeue " << endl;
     viewQueue(Q);
     cout << endl;
 
