@@ -1291,6 +1291,6 @@ int main() {
 ### Output Queue :
 
 ##### Output 1
-![Screenshot Output Queue ](-ss-queue.png)
+![Screenshot Output Queue ](ss-queue.png)
 
 
