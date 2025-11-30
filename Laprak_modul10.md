@@ -2,7 +2,7 @@
 <p align="center">Ma'ruf Sarifudin - 103112400128</p>
 
 
-## Dasar Teor
+## Dasar Teori
 Struktur data tree merupakan representasi hirarki yang terdiri dari kumpulan simpul (node) yang saling terhubung. Di antara berbagai bentuk tree, Binary Search Tree (BST) menjadi salah satu yang paling banyak digunakan karena susunan datanya mengikuti aturan terurut: nilai lebih kecil ditempatkan pada subtree kiri, sedangkan nilai yang lebih besar ditempatkan pada subtree kanan. Aturan ini membuat BST dapat melakukan operasi pencarian, penyisipan, dan penghapusan dengan lebih efisien dibanding struktur linear, terutama ketika tree berada dalam keadaan seimbang.[1]
 
 Pada BST, setiap node biasanya menyimpan tiga bagian utama: nilai data, pointer ke anak kiri, dan pointer ke anak kanan. Mekanisme penyisipan dilakukan dengan menelusuri node dari akar hingga menemukan posisi yang kosong sesuai aturan BST. Begitu pula pada proses pencarian, penelusuran akan dipersempit berdasarkan perbandingan nilai, sehingga algoritma pencarian dapat berjalan lebih cepat. Traversal seperti inorder, preorder, dan postorder digunakan untuk menampilkan isi tree dalam urutan tertentu. Traversal inorder menghasilkan keluaran terurut menaik, sehingga sangat identik dengan BST.[2]
